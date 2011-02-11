@@ -1,0 +1,78 @@
+/* 
+    Document   : contentfree.css
+    Created on : 07/04/2010, 8:00:23 PM
+    Author     : dylan
+    Description:
+        Basic move to unify segmented inline css
+*/
+
+
+/* blog_index.html */
+
+.article_index_heading {
+    font-size: xx-large;
+    /*margin-left: -10px;*/
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.article_index {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    max-width: 700px;
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    margin-left: 30px;
+}
+.article_index_title {
+    font-weight: bold;
+    font-size: 11pt;
+    text-decoration: none;
+    color: #D2B48C;
+}
+.article_index_description {
+    font-size: small;
+    margin-left: 50px;
+}
+a.article_index_link {
+    display: block;
+}
+a.article_index_link:visited {
+    text-decoration: none;
+}
+a.article_index_link:hover {
+    background: #E0FFFF;
+}
+.article_index_date {
+    float: right;
+    font-size: xx-small;
+    font-weight: bold;
+}
+
+/* blog_article.html */
+
+.article_title {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #D2B48C;
+}
+.article_box {
+    padding-top: 20px;
+    max-width:500px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin-left: 30px;
+}
+.article_body {
+    min-height: 200px;
+}
+.article_author {
+    font-size: small;
+}
+.article_date {
+    font-size: x-small;
+}
+.article_categories {
+    font-size: x-small;
+}
