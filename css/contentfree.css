@@ -66,6 +66,9 @@ a.article_index_link:hover {
 }
 .article_body {
     min-height: 200px;
+    font-size: small;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    /*font-family: Verdana, Geneva, sans-serif;*/
 }
 .article_author {
     font-size: small;
@@ -75,4 +78,16 @@ a.article_index_link:hover {
 }
 .article_categories {
     font-size: x-small;
+}
+
+a.ni {
+    color: red;
+}                     
+
+a.ni:hover {
+    color: red;
+}
+
+a.ni:visited {
+    color: red;
 }
