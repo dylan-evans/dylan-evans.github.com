@@ -5,12 +5,14 @@ title: Content Free
 
 # Welcome to {{ page.title }}
 =============================
+
 The thing i find wierd about working on github like this is the fact that 
 every little detail is open, and permanently so. I'm accustomed to keeping
 code and working details private, where on github i feel like i am throwing
 the front door to my house open and going to bed with an open invite for 
 anyone passing by to poke around in my kitchen and, oh i don't know, offer
 to improve the stir-fry they found in the fridge. 
+
 I guess i have always thought of code as being a private thing which i
 mostly keep to myself where i am free to make silly mistakes, perhaps without
 even noticing. The obvious problem is that while this may be very safe it
