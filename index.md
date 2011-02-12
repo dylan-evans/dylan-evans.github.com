@@ -2,6 +2,7 @@
 layout: default
 title: Content Free
 ---
+
 # Welcome to {{ page.title }}
 =============================
 The thing i find wierd about working on github like this is the fact that 
@@ -20,6 +21,7 @@ are inviting a stranger to go through thier stuff. For me github is that
 cleaner and the challenge for me is to let go of this private space which is
 my code, and perhaps even become a very public space where it can actually
 serve some purpose. I think this is a good thing.
+
 -------
 Later, i will be sending out invites to my _actual_ bedroom, let's see what we
 can cook up in there ladies!
