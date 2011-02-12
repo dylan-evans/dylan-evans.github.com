@@ -1,3 +1,5 @@
+
+
 /* 
     Document   : contentfree.css
     Created on : 07/04/2010, 8:00:23 PM
@@ -5,6 +7,16 @@
     Description:
         Basic move to unify segmented inline css
 */
+
+.page_content {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+    width: 600px;
+    min-height: 600px;
+    background-color: white;
+    padding: 2px;
+}
 
 
 /* blog_index.html */
