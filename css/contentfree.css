@@ -9,8 +9,8 @@
 */
 
 .page_content {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
     float: left;
     width: 596px;
     min-height: 600px;
