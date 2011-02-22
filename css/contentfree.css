@@ -21,10 +21,10 @@ body {
     width: 100%;
 }
 
-.page-header a {
+.page-header img {
     border: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 152px;
+    /* margin-right: auto; */
 }
 
 
