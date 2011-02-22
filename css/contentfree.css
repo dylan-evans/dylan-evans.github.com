@@ -1,5 +1,24 @@
 
 
+
+/* This comes from inline css in default.html */
+
+body {
+    margin: 0;
+    background-color: blue;
+}
+
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    width: 960px;
+}
+
+
+
+
+
 /* 
     Document   : contentfree.css
     Created on : 07/04/2010, 8:00:23 PM
@@ -7,6 +26,8 @@
     Description:
         Basic move to unify segmented inline css
 */
+
+
 
 .page_content {
     border-left: 1px solid #AAAAAA;
