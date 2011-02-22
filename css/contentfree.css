@@ -4,8 +4,8 @@
 /* This comes from inline css in default.html */
 
 body {
-    margin: 0;
-    background-color: #00BFFF;
+    margin: 10px;
+    background-color: #000080;
 }
 
 .page {
