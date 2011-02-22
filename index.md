@@ -25,5 +25,3 @@ my code, and perhaps even become a very public space where it can actually
 serve some purpose. I think this is a good thing.
 
 -------
-Later, i will be sending out invites to my _actual_ bedroom, let's see what we
-can cook up in there ladies!
