@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<div>
+  <ul>
+  {% for post in site.posts limit:5 %}
+    <li><a href="{{post.url}}">{{post.title}}</a></li>
+  {% end %}
+  </ul>
+</div>
