@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background-color: blue;
+    background-color: #00BFFF;
 }
 
 .page {
@@ -13,6 +13,7 @@ body {
     margin-right: auto;
     height: 800px;
     width: 960px;
+    background-color: #D3D3D3;
 }
 
 
