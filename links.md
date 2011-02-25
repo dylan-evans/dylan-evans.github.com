@@ -1,3 +1,7 @@
+---
+title: My Links
+layout: default
+---
 #Links
 ------
 A rough collection of links i have found useful, certainly and inevitably incomplete.
