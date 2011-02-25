@@ -14,7 +14,7 @@ body {
     height: 800px;
     width: 960px;
     background-color: #D3D3D3;
-    border: 1px solid black;
+    border: 1px solid #A9A9C9;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
 }
