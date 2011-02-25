@@ -30,6 +30,11 @@ body {
     -webkit-border-top-right-radius: 10px;
 }
 
+.soft-corners {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
 .page-header img {
     border: 0;
     margin-left: 152px;
