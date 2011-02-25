@@ -1,16 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
 <html>
 <head>
-    <title>{{ page.title }}</title>
-    
-    <link rel="stylesheet" type="text/css" href="/css/contentfree.css"/>
-    <link rel="icon" type="image/png" href="/images/cf_icon.png" />
-    <link rel="apple-touch-icon" href="/images/cf_icon.png"/>
-    
-    <link rel="alternate" type="application/rss+xml" title="Content Free
-    Blog" href="http://contentfree.info/feeds/all"/>
-    
-    <style type="text/css">
-    .sidebar {
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org">
+
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href=
+  "/css/contentfree.css">
+  <link rel="icon" type="image/png" href="/images/cf_icon.png">
+  <link rel="apple-touch-icon" href="/images/cf_icon.png">
+  <link rel="alternate" type="application/rss+xml" title=
+  "Content Free Blog" href="http://contentfree.info/feeds/all">
+  <style type="text/css">
+  .sidebar {
         position: absolute;
         height: 100%;
     }
@@ -42,30 +45,35 @@
     ul.menu a:hover {
         background-color: #E0FFFF;
     }
-    </style>
-    
+  </style>
 </head>
-<body><div class="page">
+
+<body>
+  <div class="page">
     <div class="page-header">
-        <a href="/"> <img src="/images/cf_banner10.png" /> </a>
+      <a href="/"><img src="/images/cf_banner10.png"></a>
     </div>
+
     <div>
-    <ul class="menu">
-        <li><a href="http://github.com/dylan-evans" title="Git Page">
-            GitHub Page</a></li>
-        <li><a href="https://gist.github.com/dylan-evans" title="Code Snippets">
-            My Gists</a></li>
-    </ul></div>
-    
-      
-      <div class="page_content">
-      	  {{ content }}
-      </div>
+      <ul class="menu">
+        <li><a href="http://github.com/dylan-evans" title=
+        "Git Page">GitHub Page</a></li>
+
+        <li><a href="https://gist.github.com/dylan-evans" title=
+        "Code Snippets">My Gists</a></li>
+      </ul>
+    </div>
+
+    <div class="page_content">
+      {{ content }}
+    </div>
+
     <div style="float: left; padding: 20px;">
-    <!-- Test content -->
-    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-    <script>
-    new TWTR.Widget({
+      <!-- Test content -->
+      <script src="http://widgets.twimg.com/j/2/widget.js" type=
+      "text/javascript">
+</script> <script type="text/javascript">
+new TWTR.Widget({
       version: 2,
       type: 'profile',
       rpp: 4,
@@ -83,7 +91,7 @@
           links: '#070feb'
         }
       },
-	features: {
+        features: {
 
            scrollbar: false,
            loop: false,
@@ -93,8 +101,9 @@
            avatars: false,
            behavior: 'all'
       }
-    }).render().setUser('theotherdylan').start();
-    </script>
-    </div> 
-</div></body>
+      }).render().setUser('theotherdylan').start();
+      </script>
+    </div>
+  </div>
+</body>
 </html>
