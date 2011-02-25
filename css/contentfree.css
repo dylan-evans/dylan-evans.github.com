@@ -14,6 +14,7 @@ body {
     height: 800px;
     width: 960px;
     background-color: #D3D3D3;
+    border: 1px solid black;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
 }
@@ -22,9 +23,9 @@ body {
     background-color: #444444;
     width: 100%;
     height: 120px;
-    -moz-border-topleft: 10px;
+    -moz-border-radius-topleft: 10px;
     -webkit-border-top-left-radius: 10px;
-    -moz-border-topright: 10px;
+    -moz-border-radius-topright: 10px;
     -webkit-border-top-right-radius: 10px;
 }
 
