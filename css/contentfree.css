@@ -16,6 +16,10 @@ body {
     background-color: #D3D3D3;
 }
 
+.top-left {
+    background: url(/images/top_left.png) 0 100% no-repeat;
+}
+
 .page-header {
     background-color: #444444;
     width: 100%;
