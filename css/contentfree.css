@@ -28,7 +28,7 @@ body {
     -webkit-border-top-left-radius: 10px;
     -moz-border-radius-topright: 10px;
     -webkit-border-top-right-radius: 10px;
-    border-bottom: 2px solid #8B8B8B;
+    border-bottom: 3px groove #8B8B8B;
 }
 
 .soft-corners {
