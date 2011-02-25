@@ -14,11 +14,9 @@ body {
     height: 800px;
     width: 960px;
     background-color: #D3D3D3;
-}
-
-div {
     -moz-border-radius: 10px;
     -webkit-boarder-radius: 10px;
+    border: 1px solid black;
 }
 
 .page-header {
