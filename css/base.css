@@ -12,8 +12,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     min-height: 800px;
-    height: auto !important;
-    height: 800px;
+/*    height: auto !important;
+    height: 800px;*/
     width: 960px;
     background-color: #D3D3D3;
     border: 1px solid #A9A9C9;
@@ -31,6 +31,12 @@ body {
     -moz-border-radius-topright: 20px;
     -webkit-border-top-right-radius: 20px;
     border-bottom: 3px groove #8B8B8B;
+}
+
+.prop {
+    float: right;
+    width: 1px;
+    height: 680px;
 }
 
 .soft-corners {
