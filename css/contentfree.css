@@ -15,8 +15,8 @@ body {
     width: 960px;
     background-color: #D3D3D3;
     border: 1px solid #A9A9C9;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
 }
 
 .page-header {
@@ -24,16 +24,16 @@ body {
     width: 100%;
     height: 120px;
     padding-top: 10px;
-    -moz-border-radius-topleft: 10px;
-    -webkit-border-top-left-radius: 10px;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
     border-bottom: 3px groove #8B8B8B;
 }
 
 .soft-corners {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 .page-header img {
