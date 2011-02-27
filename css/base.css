@@ -21,6 +21,9 @@ body {
     overflow: hidden;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 10px 10px rgba(0,0,0,0.5),
+   inset 8px 10px 10px rgba(255,255,255,0.75);
 }
 
 .page-header {
@@ -32,6 +35,8 @@ body {
     -webkit-border-top-left-radius: 20px;
     -moz-border-radius-topright: 20px;
     -webkit-border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     border-bottom: 3px groove #8B8B8B;
 }
 
@@ -39,6 +44,7 @@ body {
 .soft-corners {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 /* fix for the twitter widget */
@@ -46,6 +52,10 @@ body {
     -moz-border-radius: 10px !important;
     -webkit-border-radius: 10px !important;
     border-radius: 10px !important;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 8px 10px 10px rgba(0,0,0,0.5),
+   inset 8px 10px 10px rgba(255,255,255,0.75);
 }
 
 .page-header img {
@@ -66,6 +76,8 @@ body {
     padding: 5px;
     padding-bottom: 20px;
     margin-bottom: 10px;
+    box-shadow: 8px 10px 10px rgba(0,0,0,0.5),
+   inset 8px 10px 10px rgba(255,255,255,0.75);
 }
 
 
@@ -165,28 +177,32 @@ ul.menu {
     font-weight: bold;
     list-style-type: none;
     width: 48px;
-        padding: 0px;
-        margin-left: 8px;
-        margin-right: 8px;
-        margin-top: 10px;
-        width: 100px;
-        float: left;
-        border: 1px solid #AAAAAA;
-        background-color: #EEEEEE;
-        height: 120px;
-        padding-top: 10px;
-        padding-bottom: 5px;
-    }
-    ul.menu li {
-        margin-left: 0px;
-        padding-left: 0px;
-        margin: 0px;
-    }
-    ul.menu a {
-        text-decoration: none;
-        display: block;
-        padding: 2px;
-    }
+    padding: 0px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 10px;
+    width: 100px;
+    float: left;
+    border: 1px solid #AAAAAA;
+    background-color: #EEEEEE;
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-shadow: 8px 10px 10px rgba(0,0,0,0.5),
+   inset 8px 10px 10px rgba(255,255,255,0.75);
+}
+
+ul.menu li {
+    margin-left: 0px;
+    padding-left: 5px;
+    margin: 0px;
+}
+    
+ul.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 2px;
+}
     ul.menu a:visitied {
         color: blue;
     }

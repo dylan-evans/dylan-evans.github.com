@@ -18,4 +18,9 @@ A rough collection of links i have found useful, certainly and inevitably incomp
   > Many ideas
 * [Curvy Corners](http://www.curvycorners.net/)
   > The javascript hack (used on this site) which provides CSS3 style rounded
-  > conrners in browsers which don't support it.
+  > corners in browsers which don't support it.
+* [cssSandpaper](http://www.useragentman.com/blog/csssandpaper-a-css3-javascript-library/)
+  > A CSS3 compatibility library which looks quite good.
+* [tripleB](http://www.netzgesta.de/tripleb/)
+  > Another CSS3 javascript hack
+
