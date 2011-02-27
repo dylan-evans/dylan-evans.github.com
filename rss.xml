@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<!-- This is based on
+https://github.com/coyled/coyled.com/blob/master/rss.xml -->
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Content Free Blog</title>
+        <link>http://dylan-evans.github.com</link>
+        <description>My code blog</description>
+        <language>en-us</language>
+        <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
+        
+        {% for post in site.posts %}
+        <item>
+            <title>{{ post.title }}</title>
+            <link>http://dylan-evans.github.com/{{ post.url }}</link>
+            <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
+            <author> dylan@contentfree.info (Dylan Evans) </author>
+            <guid>http://coyled.com{{ post.id }}</guid>
+            <description>{{ post.content | xml_escape }}</description>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>
