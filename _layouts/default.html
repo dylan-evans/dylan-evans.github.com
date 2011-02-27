@@ -22,19 +22,12 @@
     </div>
     <div class="prop"></div>
 
-    <div>
-      <ul class="menu soft-corners">
-        <li><a href="http://github.com/dylan-evans" title=
-        "Git Page">GitHub Page</a></li>
-
-        <li><a href="http://gist.github.com/dylan-evans" title=
-        "Code Snippets">My Gists</a></li>
-        <li><a href="/links" title="Some of my favourites">Links</a></li>
-      </ul>
-    </div>
-
+    {% include menu %}
+    
     <div class="page_content soft-corners">
+      
       {{ content }}
+      
     </div>
 
     <div style="float: left; padding: 10px;">
