@@ -24,6 +24,7 @@ body {
     box-shadow: 8px 10px 10px rgba(0,0,0,0.5),
    inset 4px 10px 10px rgba(255,255,255,0.85);
     zoom: 1;
+    overflow: hidden; /* I don't know why this works! */
 }
 
 .page-header {
@@ -93,6 +94,7 @@ body {
     padding-bottom: 20px;
     margin-bottom: 10px;
     box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
+    font-family: .Lucida Sans Unicode., .Lucida Grande., sans-serif;
 }
 
 
