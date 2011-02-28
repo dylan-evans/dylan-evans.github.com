@@ -23,4 +23,5 @@ A rough collection of links i have found useful, certainly and inevitably incomp
   > A CSS3 compatibility library which looks quite good.
 * [tripleB](http://www.netzgesta.de/tripleb/)
   > Another CSS3 javascript hack
-
+* [On having Layout](http://www.satzansatz.de/cssd/onhavinglayout.html)
+  > Brilliant and informative article describing Layout in IE
