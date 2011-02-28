@@ -25,3 +25,5 @@ A rough collection of links i have found useful, certainly and inevitably incomp
   > Another CSS3 javascript hack
 * [On having Layout](http://www.satzansatz.de/cssd/onhavinglayout.html)
   > Brilliant and informative article describing Layout in IE
+* [ie7-js](http://code.google.com/p/ie7-js/)
+  > Javascript that makes IE "behave like a standards-compliant browser.
