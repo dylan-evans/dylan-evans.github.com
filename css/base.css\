@@ -11,19 +11,19 @@ body {
 .page {
     margin-left: auto;
     margin-right: auto;
-    min-height: 800px;
+    min-height: 100%;
     height: auto;
 /*    height: auto !important;
     height: 800px;*/
     width: 960px;
     background-color: #D3D3D3;
     border: 1px solid #A9A9C9;
+    overflow: hidden;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
     box-shadow: 8px 10px 10px rgba(0,0,0,0.5),
-   inset 4px 10px 10px rgba(255,255,255,0.85);
-    zoom: 1;
+   inset 8px 10px 10px rgba(255,255,255,0.75);
 }
 
 .page-header {
@@ -38,7 +38,7 @@ body {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 /*    border-bottom: 3px groove #8B8B8B; */
-    box-shadow: inset 4px 10px 10px rgba(255,255,255,0.75);
+    box-shadow: inset 8px 10px 10px rgba(255,255,255,0.75);
 }
 
 .page-footer {
@@ -64,10 +64,6 @@ body {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
-}
-
-.disqus {
-    zoom: 1; /* IE trick */
 }
 
 #disqus_thread {
@@ -96,6 +92,50 @@ body {
 }
 
 
+/* blog_index.html */
+
+.article_index_heading {
+    font-size: xx-large;
+    /*margin-left: -10px;*/
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.article_index {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    max-width: 700px;
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    margin-left: 30px;
+}
+.article_index_title {
+    font-weight: bold;
+    font-size: 11pt;
+    text-decoration: none;
+    color: #D2B48C;
+}
+.article_index_description {
+    font-size: small;
+    margin-left: 50px;
+}
+a.article_index_link {
+    display: block;
+}
+a.article_index_link:visited {
+    text-decoration: none;
+}
+a.article_index_link:hover {
+    background: #E0FFFF;
+}
+.article_index_date {
+    float: right;
+    font-size: xx-small;
+    font-weight: bold;
+}
+
 /* blog_article.html */
 
 .article_title {
@@ -103,13 +143,13 @@ body {
     font-size: xx-large;
     color: #D2B48C;
 }
-.postX {
+.article_box {
     padding-top: 20px;
     max-width:500px;
     font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
     margin-left: 30px;
 }
-.postY {
+.article_body {
     min-height: 200px;
     font-size: small;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
