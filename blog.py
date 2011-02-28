@@ -31,7 +31,11 @@ def safe_title(title):
 def file_name(title):
     return datetime.date.today().strftime('%Y-%m-%d') + '-' + safe_title(title)
 
-def create_post(title):
+def create_front_matter(title, published=True):
+    return ("---\n" "layout: post\n" "title:%s\n" "published: %s\n" "---\n") % \
+          (title, 'true' if published else 'false')
+          
+def create_post(title, published):
     filename = os.path.join('_posts', file_name(title) + '.md')
     print 'Creating file: %s' % filename
     try:
@@ -39,7 +43,7 @@ def create_post(title):
     except:
         print 'Failed to create file'
         sys.exit(1)
-    f.write('---\ntitle: %s\npublish: true\nlayout: post\n---\n' % title)
+    f.write(create_front_matter(title, published))
     f.close()
     return filename
     
@@ -47,11 +51,12 @@ if __name__ == '__main__':
     opt = OptionParser()
     opt.add_option('-t', '--title', help='Blog Title')
     opt.add_option('-m', '--message', help='Commit message', default='Add new blog' )
+    opt.add_option('-P', '--no-publish', action='store_true', default=False)
     (options, args) = opt.parse_args()
     
     if not options.title:
         print("The -t TITLE argument is required")
         sys.exit()
     
-    create_post(options.title)
+    create_post(options.title, not opt.no_publish)
     

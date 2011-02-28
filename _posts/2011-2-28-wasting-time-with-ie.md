@@ -42,7 +42,7 @@ elements in basic is what really sparked my interest in programming a long
 time ago so perhaps it isn't so surprising that i really enjoy creating web
 sites.
 
-# More on IE
+# Extended digression on IE
 What were they thinking? I remember about ten years ago when developers
 would create a site for IE and simply exclude all other browsers. Thankfully
 that practice not only didn't catch on but Microsoft has recieved a backlash
