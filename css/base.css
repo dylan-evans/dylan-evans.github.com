@@ -145,6 +145,22 @@ a.ni:visited {
     height: 100%;
 }
 
+.sidebar-module-left {
+    /* copied from menu */
+    font-family: arial;
+    font-size: 8pt;
+    padding: 0px;
+    width: 100px;
+    min-height: 50px;
+    border: 1px solid #AAAAAA;
+    background-color: #EEEEEE;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
+    float: left;
+    clear: left;
+}
+
 ul.menu {
     font-family: arial;
     font-size: 8pt;
