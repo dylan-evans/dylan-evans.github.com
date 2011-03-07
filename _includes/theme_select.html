@@ -1,0 +1,36 @@
+<!--
+Select/Change the current theme
+
+-->
+
+<div id="theme-select" class="module">
+    <script type="text/javascript">
+    function save_theme(file) {
+        document.cookie = 'theme=' + file + ';' ;
+    }
+    
+    function change_theme(file) {
+        el = document.getElementById("base-style");
+        el.setAttribute('href', '/css/' + file);
+    }
+    
+    function restore_theme() {
+        var cookies = document.cookie.split(';');
+        for(i=0; i<cookies.length; i++) {
+            name = cookies[i].substr(0, cookies[i].indexOf("="));
+            if(name == 'theme') {
+                change_theme(cookies[i].substr(cookies[i].indexOf("=")+1));
+                return;
+            }
+        }  
+    }
+    restore_theme();
+    </script>
+    <div>Theme Selector</div>
+    <form>
+        <select onchange="change_theme(this.value);save_theme(this.value);" title="Themes are mostly for development, but may provide some novelty too ;-)" >
+            <option value="base.css">Default</option>
+            <option value="test.css">Test</option>
+        </select>
+    </form>
+</div>

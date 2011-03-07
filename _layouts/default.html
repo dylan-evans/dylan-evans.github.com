@@ -6,22 +6,24 @@
   "HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org">
 
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" type="text/css" href=
-  "/css/base.css">
+  <link id="base-style" rel="stylesheet" type="text/css" href="/css/base.css">
   <link rel="icon" type="image/png" href="/images/cf_icon.png">
   <link rel="apple-touch-icon" href="/images/cf_icon.png">
   <link rel="alternate" type="application/rss+xml" 
     title="Content Free Blog" href="http://dylan-evans.github.com/rss.xml">
   <!-- http://code.google.com/p/ie7-js/ -->
-  <script type="text/javascript" src="/js/IE9.js">IE7_PNG_SUFFIX=".png";</script>
-  <!-- http://www.useragentman.com/blog/csssandpaper-a-css3-javascript-library/ -->
+<!--  <script type="text/javascript" src="/js/IE9.js">IE7_PNG_SUFFIX=".png";</script>
+
+  <!-- http://www.useragentman.com/blog/csssandpaper-a-css3-javascript-library/
   <script type="text/javascript" src="/js/cssSandpaper/EventHelpers.js">
   </script>
   <script type="text/javascript" src="/js/cssSandpaper/cssQuery-p.js">
   </script>
   <script type="text/javascript" src="/js/cssSandpaper/jcoglan.com/sylvester.js">
   </script>
-  <script type="text/javascript" src="/js/cssSandpaper/cssSandpaper.js">
+  <script type="text/javascript" src="/js/cssSandpaper/cssSandpaper.js">-->
+  <!-- <script type="text/javascript" src="/js/curvycorners.js"> </script>
+  -->
   </script>
   
 </head>
@@ -33,8 +35,11 @@
     </div>
     <div class="prop"></div>
 
-    {% include menu.html %}
+    <div id="sidebar-left">
+        {% include menu.html %}
     
+        {% include theme_select.html %}
+    </div>
     <div class="page_content soft-corners">
       
       {{ content }}
@@ -80,7 +85,6 @@ new TWTR.Widget({
     Last Build: {{ site.time }}
   </div>
   </div>
-  <script type="text/javascript" src="/js/curvycorners.js"> </script>
-  
+ 
 </body>
 </html>

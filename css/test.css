@@ -18,7 +18,7 @@ body {
     width: 960px;
     background-image: url(/images/header-bg.png);
     background-repeat: no-repeat;
-    background-color: #D3D3D3;
+    background-color: red;
 
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -64,7 +64,6 @@ body {
     box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     -webkit-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     -moz-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
-    behavior: url(/js/PIE.htc); /* does not work */
 }
 
 .disqus {

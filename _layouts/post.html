@@ -2,7 +2,14 @@
 layout: default
 blog: true
 ---
-<div class="post">{{content}}</div>
+{% if 1 %}
+  {% for p in site.posts %}
+    {% if p.url == page.url %}
+      {% assign post = p %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+<div class="post">{{ post.content }}</div>
 
 <div class="disqus">
 <div id="disqus_thread"></div>
