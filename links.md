@@ -29,3 +29,6 @@ A rough collection of links i have found useful, certainly and inevitably incomp
   > Javascript that makes IE "behave like a standards-compliant browser.
 * [css3pie](http://css3pie.com/)
   > The best CSS3 compatibility i have tested yet.
+* [Esperfonto](http://esperfonto.com/)
+  > A comprehensive and intuitive font seach tool - probably not a good idea 
+  > to use these fonts for the web though.
