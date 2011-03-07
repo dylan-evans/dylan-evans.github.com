@@ -65,10 +65,11 @@ img {
     border-radius: 10px !important;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
+    border-radius: 10px;
     box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     -webkit-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     -moz-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
-    behavior: url(/js/PIE.htc); /* does not work */
+    behavior: url(/js/PIE.htc); 
 }
 
 .disqus {
@@ -85,7 +86,7 @@ img {
     /* margin-right: auto; */
 }
 
-.page_content {
+#page-content {
     margin-top: 10px;
     border: 1px solid #AAAAAA;
     float: left;
@@ -102,6 +103,15 @@ img {
     box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     font-family: .Lucida Sans Unicode., .Lucida Grande., sans-serif;
     behavior: url(/js/PIE.htc);
+}
+
+#blog-widget {
+
+}
+
+#blog-widget .post-title {
+    width: 200px;
+    padding-left: 20px;
 }
 
 
@@ -221,7 +231,7 @@ ul.menu {
     padding: 2px;
 }
 
-#menu a:visitied {
+#menu a:visit   ed {
     color: blue;
 }
 

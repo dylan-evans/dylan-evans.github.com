@@ -5,17 +5,16 @@ title: Content Free
 <h1>Welcome</h1>
 <p>This is my personal playground and ranting zone. Please check out my
 blog below or my github repositories to the left. Thanks for visiting.</p>
+<p>Now working in IE thanks to <a href="http://css3pie.com">css3pie</a></p>
 <p>This is a work in progress</p>
 <h2> Blog</h2>
 <div>
-  <ul>
-  {% for post in site.posts limit:5 %}
-    <li><a href="{{post.url}}">{{post.title}}</a></li>
-  {% endfor %}
-  </ul>
+  
+  {% include blog_widget.html %}
+
 <h2>Potential Employers</h2>
 <p>Thank you for taking the time to check me out. This site is most
-certainly beta and degrades in all versions of IE, it looks best in opera.
+certainly beta. 
 Please check out my gists and github repositories, i am new to github but
 this will give you some idea as to what i am about.</p>
 </div>

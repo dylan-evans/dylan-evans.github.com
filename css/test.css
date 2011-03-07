@@ -5,7 +5,7 @@
 
 body {
     margin: 10px;
-    background-color: #8080C0;
+    background-color: red;
 }
 
 .page {
@@ -18,7 +18,7 @@ body {
     width: 960px;
     background-image: url(/images/header-bg.png);
     background-repeat: no-repeat;
-    background-color: red;
+    background-color: #D3D3D3;
 
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -37,6 +37,10 @@ body {
     height: 120px;
     padding-top: 10px;
     behavior: url(/js/PIE.htc);
+}
+
+img {
+    -pie-png-fix: true;
 }
 
 .page-footer {
@@ -61,9 +65,11 @@ body {
     border-radius: 10px !important;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
+    border-radius: 10px;
     box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     -webkit-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     -moz-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
+    behavior: url(/js/PIE.htc); 
 }
 
 .disqus {
@@ -80,7 +86,7 @@ body {
     /* margin-right: auto; */
 }
 
-.page_content {
+#page-content {
     margin-top: 10px;
     border: 1px solid #AAAAAA;
     float: left;
@@ -88,7 +94,7 @@ body {
     min-height: 600px;
     height: auto !important;
     height: 600px;
-    background-color: white;
+    background-color: red;
     padding: 5px;
     padding-bottom: 20px;
     margin-bottom: 10px;
@@ -97,6 +103,14 @@ body {
     box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     font-family: .Lucida Sans Unicode., .Lucida Grande., sans-serif;
     behavior: url(/js/PIE.htc);
+}
+
+#blog-widget {
+
+}
+
+#blog-widget .post-title {
+    width: 200px;
 }
 
 
@@ -216,7 +230,7 @@ ul.menu {
     padding: 2px;
 }
 
-#menu a:visitied {
+#menu a:visit   ed {
     color: blue;
 }
 
@@ -227,4 +241,12 @@ ul.menu {
 #theme-select {
     font-weight: bold;
     padding-left: 4px !important;
+}
+
+#sidebar-right {
+
+}
+
+#sidebar-right module {
+
 }

@@ -1,0 +1,14 @@
+
+<!-- Blog snippet -->
+
+<div id="blog-widget" class="blog">
+    <table>
+    {% for post in site.posts limit:5 %}
+        <tr>
+            <td class="post-title"><a href="{{post.url}}">{{post.title}}</a></td>
+            <td class="post-date">{{post.date | date: '%Y-%m-%d'}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <a href="/blog.html">All posts</a>
+</div>
