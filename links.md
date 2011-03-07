@@ -32,3 +32,7 @@ A rough collection of links i have found useful, certainly and inevitably incomp
 * [Esperfonto](http://esperfonto.com/)
   > A comprehensive and intuitive font seach tool - probably not a good idea 
   > to use these fonts for the web though.
+
+##Other
+* [D-E-F-I-N-I-T-E-L-Y](http://www.d-e-f-i-n-i-t-e-l-y.com/)
+  > For anyone (such as myself) who ever had any doubt.
