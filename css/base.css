@@ -39,6 +39,10 @@ body {
     behavior: url(/js/PIE.htc);
 }
 
+img {
+    -pie-png-fix: true;
+}
+
 .page-footer {
     float: left;
     clear: both;
@@ -228,4 +232,12 @@ ul.menu {
 #theme-select {
     font-weight: bold;
     padding-left: 4px !important;
+}
+
+#sidebar-right {
+
+}
+
+#sidebar-right module {
+
 }
