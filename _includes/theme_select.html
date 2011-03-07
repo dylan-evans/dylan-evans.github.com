@@ -4,33 +4,68 @@ Select/Change the current theme
 -->
 
 <div id="theme-select" class="module">
+    
+    <div>Theme Selector</div>
+    <form name="theme_select" >
+        <select id="t_sel" name="opt" onchange="change_theme(this.value);save_theme(this.value);" 
+          title="Themes are mostly for development, but may provide some novelty ;-)" >
+            <option value="base.css">Default</option>
+            <option value="test.css">Test</option>
+            <option value="font_test.css">Font test</option>
+        </select>
+    </form>
     <script type="text/javascript">
+    // Plain Javascript for setting themes to cookies 
+    // All data is found in the select options above
+    
+    // Save the selected theme to a cookie
     function save_theme(file) {
         document.cookie = 'theme=' + file + ';' ;
     }
     
+    // Change the theme currently displayed
     function change_theme(file) {
         el = document.getElementById("base-style");
         el.setAttribute('href', '/css/' + file);
     }
     
-    function restore_theme() {
+    // Retrieve the theme from cookie
+    function get_theme() {
         var cookies = document.cookie.split(';');
-        for(i=0; i<cookies.length; i++) {
-            name = cookies[i].substr(0, cookies[i].indexOf("="));
+        for(i=0; i< cookies.length; i++) {
+            var eq_idx = cookies[i].indexOf('=');
+            var name = cookies[i].substr(0, eq_idx);
             if(name == 'theme') {
-                change_theme(cookies[i].substr(cookies[i].indexOf("=")+1));
-                return;
+                return cookies[i].substr(eq_idx+1);
             }
-        }  
+        }
+        return null;
     }
-    restore_theme();
+    
+    // Restore the theme from cookie
+    function restore_theme() {
+        var theme = get_theme();
+        if(theme != null) {
+            change_theme(theme);
+        }
+        return theme;
+    }
+    
+    // Set the current theme selection 
+    function select_theme(theme) {
+        var t_sel = document.theme_select.opt;
+        for(i=0; i<t_sel.length;i++) {
+            
+            if(t_sel[i].getAttribute('value') == theme) {
+                //alert(t_sel[i].getAttribute('value'));
+                t_sel[i].selected = true;
+                break;
+            }
+        }
+    }
+    
+    var current_theme = restore_theme();
+    select_theme(current_theme);
+     
     </script>
-    <div>Theme Selector</div>
-    <form>
-        <select onchange="change_theme(this.value);save_theme(this.value);" title="Themes are mostly for development, but may provide some novelty too ;-)" >
-            <option value="base.css">Default</option>
-            <option value="test.css">Test</option>
-        </select>
-    </form>
 </div>
