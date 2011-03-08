@@ -1,6 +1,6 @@
 ---
 title: My Links
-layout: default
+layout: catalogue
 ---
 #Links
 ------
