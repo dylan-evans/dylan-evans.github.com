@@ -6,6 +6,11 @@ layout: default
 ------
 A rough collection of links i have found useful, certainly and inevitably incomplete.
 
+##Linux
+* [Linux Containers (LXC)](http://sysadvent.blogspot.com/2010/12/day-1-linux-containers-lxc.html)
+  > A very informative article by Ken Barber which explores virtualization
+  > with Linux containers.
+
 ##Icons and Images
 * [Open Icon Library](http://openiconlibrary.sourceforge.net/ "Open icons")
   > Very nice set of all purpose icons
