@@ -14,9 +14,18 @@ Select/Change the current theme
             <option value="font_test.css">Font test</option>
         </select>
     </form>
+    
+    <!-- Naybe add font selector here -->
+    
+    <!-- and font size selector here -->
+    
     <script type="text/javascript">
     // Plain Javascript for setting themes to cookies 
     // All data is found in the select options above
+    
+    //var DEFAULT_THEME = 'base.css'; /* Should set this from <link> */
+    
+    var DEFAULT_THEME = document.getElementById("base-style").getAttribute('href').substr(5);
     
     // Save the selected theme to a cookie
     function save_theme(file) {
@@ -47,8 +56,9 @@ Select/Change the current theme
         var theme = get_theme();
         if(theme != null) {
             change_theme(theme);
+            return theme;
         }
-        return theme;
+        return DEFAULT_THEME; /* No theme so return default */
     }
     
     // Set the current theme selection 
