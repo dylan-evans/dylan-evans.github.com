@@ -7,6 +7,7 @@ title: All about Content Free
 
 ## Contact
 Email: [dylan@dje.me](mailto:dylan@dje.me)
+
 Tweet: [dje_me](http://twitter.com/dje_me)
 
 ## Credits
