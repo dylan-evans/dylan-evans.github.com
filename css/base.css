@@ -237,7 +237,7 @@ ul.menu {
     padding: 2px;
 }
 
-#menu a:visited {
+#menu a:visit   ed {
     color: blue;
 }
 
@@ -256,4 +256,13 @@ ul.menu {
 
 #sidebar-right module {
 
+}
+
+/* This is used to wrap a small embedded gist */
+.small-gist .gist-data {
+    height: 30em;
+
+    overflow: scroll;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

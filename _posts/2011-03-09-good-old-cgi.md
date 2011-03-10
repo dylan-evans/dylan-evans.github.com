@@ -27,4 +27,5 @@ of than is worth the effort. I don't have any plans to develop with CGI however,
 and with the abundance of new and exciting tools on offer it may be all too easy 
 for the standard which started it all to slip away into obscurity. 
 
-{{'<div style="height: 20em; overflow-y: scroll;"><script src="https://gist.github.com/80113a377d2e526e9b34.js?file=execcgi.py"><!-- --></script></div>'}}
+###cgiexec.py
+{{'<div class="small-gist"><script src="https://gist.github.com/80113a377d2e526e9b34.js?file=cgiexec.py"><!-- --></script></div>'}}
