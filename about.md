@@ -5,6 +5,9 @@ title: All about Content Free
 # {{page.title}}
 ### (AKA dje.me and dylan-evans.github.com )
 
+## Contact
+Email: [dylan@dje.me](mailto:dylan@dje.me)
+Tweet: [dje_me](http://twitter.com/dje_me)
 
 ## Credits
 Here is a non-exhaustive list of resources which have helped me create this
