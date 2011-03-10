@@ -11,6 +11,10 @@ A rough collection of links i have found useful, certainly and inevitably incomp
   > A very informative article by Ken Barber which explores virtualization
   > with Linux containers.
 
+##Python
+* [XML and HTML with Python](http://lxml.de/)
+  > An XML/HTML processor which binds to libxml2 and libxslt.
+
 ##Icons and Images
 * [Open Icon Library](http://openiconlibrary.sourceforge.net/ "Open icons")
   > Very nice set of all purpose icons

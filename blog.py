@@ -36,7 +36,7 @@ def file_name(title):
 
 def create_front_matter(title, published=True):
     "Create a front matter for the post"
-    return ("---\n" "layout: post\n" "title:%s\n" "published: %s\n" "---\n") % \
+    return ("---\n" "layout: post\n" "title: %s\n" "published: %s\n" "---\n") % \
           (title, 'true' if published else 'false')
           
 def create_post(title, published):
