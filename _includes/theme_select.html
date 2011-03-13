@@ -26,11 +26,13 @@ Select/Change the current theme
     
     //var DEFAULT_THEME = 'base.css'; /* Should set this from <link> */
     
+    var store = new Persist.Store('Theme Store');
+    
     var DEFAULT_THEME = document.getElementById("base-style").getAttribute('href').substr(5);
     
     // Save the selected theme to a cookie
     function save_theme(file) {
-        document.cookie = 'theme=' + file + ';' ;
+        store.set('theme', file);
     }
     
     // Change the theme currently displayed
@@ -41,20 +43,24 @@ Select/Change the current theme
     
     // Retrieve the theme from cookie
     function get_theme() {
-        var cookies = document.cookie.split(';');
-        for(i=0; i< cookies.length; i++) {
-            var eq_idx = cookies[i].indexOf('=');
-            var name = cookies[i].substr(0, eq_idx);
-            if(name == 'theme') {
-                return cookies[i].substr(eq_idx+1);
+        return store.get('theme', function(ok, val) {
+            if(ok) {
+                return val;
+            } else {
+                return DEFAULT_THEME;
             }
-        }
-        return null;
+        });
     }
     
     // Restore the theme from cookie
     function restore_theme() {
-        var theme = get_theme();
+        var theme = DEFAULT_THEME;
+        store.get('theme', function(ok, val) {
+            if(ok) {
+                theme = val;
+            }
+        });
+        //alert(theme);
         if(theme != null) {
             change_theme(theme);
             return theme;
