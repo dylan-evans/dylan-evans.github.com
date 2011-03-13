@@ -60,12 +60,7 @@ Select/Change the current theme
                 theme = val;
             }
         });
-        //alert(theme);
-        if(theme != null) {
-            change_theme(theme);
-            return theme;
-        }
-        return DEFAULT_THEME; /* No theme so return default */
+        return theme;
     }
     
     // Set the current theme selection 
