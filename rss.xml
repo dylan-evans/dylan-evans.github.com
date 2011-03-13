@@ -9,19 +9,29 @@ https://github.com/coyled/coyled.com/blob/master/rss.xml -->
     <channel>
         <title>Content Free Blog</title>
         <link>http://dylan-evans.github.com</link>
-        <description>My code blog</description>
+        <description>The ravings and code of Dylan Evans</description>
         <language>en-us</language>
         <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
+        <image>
+            <url>http://dylan-evans.github.com/images/cf_icon_bg.png</url>
+            <title>Dylan's Blog</title>
+            <link>http://dylan-evans.github.com</link>
+        </image>
+        <docs>http://http://cyber.law.harvard.edu/rss/rss.html</docs>
+        <generator>Jekyll</generator>
         
         {% for post in site.posts %}
         <item>
             <title>{{ post.title }}</title>
             <link>http://dylan-evans.github.com/{{ post.url }}</link>
             <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
-            <author> dylan@contentfree.info (Dylan Evans) </author>
-            <guid>http://coyled.com{{ post.id }}</guid>
+            <author> dylan@dje.me (Dylan Evans) </author>
+            <guid>{{ post.id }}</guid>
             <description>{{ post.content | xml_escape }}</description>
+            {% for category in post.categories %}
+                <category>{{category}}</category>
+            {% endfor %}
         </item>
         {% endfor %}
     </channel>
-</rss>
+</rss>2
