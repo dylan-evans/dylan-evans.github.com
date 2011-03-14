@@ -1,5 +1,7 @@
 ---
 layout: nil
+title Dylan's Blog
+host: dylan-evans.github.com
 ---
 <?xml version="1.0"?>
 <!-- This is based on
@@ -7,14 +9,14 @@ https://github.com/coyled/coyled.com/blob/master/rss.xml -->
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Content Free Blog</title>
+        <title>{{ page.title }}</title>
         <link>http://dylan-evans.github.com</link>
         <description>The ravings and code of Dylan Evans</description>
         <language>en-us</language>
         <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
         <image>
             <url>http://dylan-evans.github.com/images/cf_icon_bg.png</url>
-            <title>Dylan's Blog</title>
+            <title>{{ page.title }}</title>
             <link>http://dylan-evans.github.com</link>
         </image>
         <docs>http://http://cyber.law.harvard.edu/rss/rss.html</docs>
@@ -23,10 +25,10 @@ https://github.com/coyled/coyled.com/blob/master/rss.xml -->
         {% for post in site.posts %}
         <item>
             <title>{{ post.title }}</title>
-            <link>http://dylan-evans.github.com/{{ post.url }}</link>
+            <link>http://{{ page.host }}{{ post.url }}</link>
             <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
             <author> dylan@dje.me (Dylan Evans) </author>
-            <guid>{{ post.id }}</guid>
+            <guid>http://{{ page.host }}{{ post.id }}</guid>
             <description>{{ post.content | xml_escape }}</description>
             {% for category in post.categories %}
                 <category>{{category}}</category>
@@ -34,4 +36,4 @@ https://github.com/coyled/coyled.com/blob/master/rss.xml -->
         </item>
         {% endfor %}
     </channel>
-</rss>2
+</rss>
