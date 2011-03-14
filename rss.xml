@@ -1,7 +1,7 @@
 ---
 layout: nil
-title Dylan's Blog
-host: dylan-evans.github.com
+title: Dylan's Blog
+host: "dylan-evans.github.com"
 ---
 <?xml version="1.0"?>
 <!-- This is based on
