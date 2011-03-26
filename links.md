@@ -24,7 +24,7 @@ A rough collection of links i have found useful, certainly and inevitably incomp
 
 
 ##Web Design
-*[Top ten things HTML5 makes simpler](http://davidbcalhoun.com/2010/top-ten-things-html5-makes-simpler)
+* [Top ten things HTML5 makes simpler](http://davidbcalhoun.com/2010/top-ten-things-html5-makes-simpler)
   > Nice blog about some differences in HTML 5
 * [25 Rounded Corner Techniques with CSS](http://www.devwebpro.com/25-rounded-corners-techniques-with-css/)
   > Many ideas
