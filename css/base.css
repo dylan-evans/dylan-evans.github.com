@@ -5,7 +5,9 @@
 
 body {
     margin: 10px;
-    background-color: #8080C0;
+    background-color: black;
+    background-image: url(/test/x2.jpg);
+    background-repeat: no-repeat;
 }
 
 .page {

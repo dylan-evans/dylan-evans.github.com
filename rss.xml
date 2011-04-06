@@ -9,7 +9,7 @@ https://github.com/coyled/coyled.com/blob/master/rss.xml -->
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <atom:link href="{{ page.host }}/rss.xml" rel="self"
+        <atom:link href="http://{{ page.host }}/rss.xml" rel="self"
         type="application/rss+xml" />
         <title>{{ page.title }}</title>
         <link>http://dylan-evans.github.com</link>
