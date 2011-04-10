@@ -209,7 +209,7 @@ a.ni:visited {
 #menu {
     font-weight: bold;
     list-style-type: none;
-    height: 120px;
+    min-height: 120px;
 }
 
 ul.menu {
