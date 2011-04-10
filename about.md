@@ -35,5 +35,5 @@ many more, here are some of the sites i bookmarked.
 ## Tools
 [Microsoft Expressions Super Preview](http://expression.microsoft.com/en-us/dd565874.aspx)
 > An aweful program for previewing a site in IE6, IE7. Slightly easier than running VMs though
-[MultipleIEs](http://tredosoft.com/multipleIEs)
+[Multiple IEs](http://tredosoft.com/Multiple_IE)
 > Even better tool for testing IE compatibility
