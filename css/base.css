@@ -180,6 +180,7 @@ a.ni:visited {
     float: left;
     width: 120px;
     min-height: 400px;
+    padding-top: 10px;
     overflow: hidden;
 }
 
@@ -194,8 +195,9 @@ a.ni:visited {
     border: 1px solid #AAAAAA;
     background-color: #EEEEEE;
     margin-left: 8px;
+    margin-bottom:20px;
     padding: 0px;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 5px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -206,10 +208,10 @@ a.ni:visited {
     behavior: url(/js/PIE.htc);
 }
 
-#menu {
+#menu ul {
     font-weight: bold;
     list-style-type: none;
-    min-height: 120px;
+    padding-left: 0px
 }
 
 ul.menu {
@@ -233,7 +235,7 @@ ul.menu {
 
 #menu li {
     margin-left: 0px;
-    padding-left: 5px;
+    padding-left: 0px;
     margin: 0px;
 }
     
@@ -241,6 +243,7 @@ ul.menu {
     text-decoration: none;
     display: block;
     padding: 2px;
+    padding-left: 10px;
     font-weight: normal;
     letter-spacing: 1px;
 }
@@ -254,6 +257,7 @@ ul.menu {
 }
 
 #theme-select {
+    padding-top: 10px !important;
     font-weight: bold;
     padding-left: 4px !important;
 }
