@@ -25,7 +25,9 @@ Select/Change the current theme
     // All data is found in the select options above
     
     //var DEFAULT_THEME = 'base.css'; /* Should set this from <link> */
-    
+
+    // Remove annoying popup
+    Persist.remove('gears');
     var store = new Persist.Store('Theme Store');
     
     var DEFAULT_THEME = document.getElementById("base-style").getAttribute('href').substr(5);
