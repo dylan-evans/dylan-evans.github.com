@@ -3,6 +3,7 @@ layout: post
 title: The correct size of a name
 published: true
 ---
+# {{ page.title }}
 A word of warning, this is a blog without a conclusion. It is inevitable when
 considering any constraint in a new system that the final values will be a stab
 in the dark, a best guess for what the future may hold. Imposed data limits are a fact of life for programmers, 
