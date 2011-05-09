@@ -104,7 +104,7 @@ img {
     -moz-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     /* font-family: "Lucida Grande", Helvetica, Arial, sans-serif; */
-    font-family: Georgia, serif;
+    font-family: "Courier New", Georgia, serif;
     font-size: medium; /* Arial only seems to ever look ok in small or bold form */
     behavior: url(/js/PIE.htc);
 }
