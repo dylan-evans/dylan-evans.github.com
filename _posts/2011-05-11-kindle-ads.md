@@ -4,7 +4,7 @@ published: true
 title: The Ad Supported Kindle
 ---
 # {{page.title}}
-Amazon has recently released Ad supported edition of the wifi Kindle enticing
+Amazon has recently released an Ad supported edition of the wifi Kindle enticing
 buyers with a $25 discount. The Kindle screensaver becomes an Ad or offer instead
 of the images of distinguished authors and a small ad is included beneath the book
 list. Not particularly intrusive and any discount would be better spent on actual
