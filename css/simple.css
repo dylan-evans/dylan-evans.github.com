@@ -5,7 +5,7 @@
 
 body {
     margin: 10px;
-    background-color: #fff284;
+    background-color: #f6f0bc;
 }
 
 .page {
@@ -18,15 +18,7 @@ body {
     width: 960px;
     background-image: url(/images/header-bg.png);
     background-repeat: no-repeat;
-    background-color: #D3D3D3;
-
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-    box-shadow: 8px 10px 10px rgba(0,0,0,0.5),
-   inset 4px 10px 10px rgba(255,255,255,0.85);
-    -webkit-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
-    zoom: 1;
+    
     overflow: hidden; /* I don't know why this works! */
     behavior: url(/js/PIE.htc);
 }
@@ -98,9 +90,6 @@ img {
     padding: 5px;
     padding-bottom: 20px;
     margin-bottom: 10px;
-    -webkit-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
-    -moz-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
-    box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
     font-family: Helvetica, Arial, sans-serif; 
     /* font-family: "Courier New", Georgia, serif; */
     font-size: small; /* Arial only seems to ever look ok in small or bold form */
