@@ -7,7 +7,7 @@ Select/Change the current theme
     
     <div>Theme Selector</div>
     <form name="theme_select" >
-        <select id="t_sel" name="opt" onchange="change_theme(this.value);save_theme(this.value);" 
+        <select id="t_sel" name="opt" onchange="change_theme(this.value);" 
           title="Themes are mostly for development, but may provide some novelty ;-)" >
             <option value="base.css">Default</option>
             <option value="test.css">Test</option>
@@ -28,9 +28,10 @@ Select/Change the current theme
     //var DEFAULT_THEME = 'base.css'; /* Should set this from <link> */
 
     // Remove annoying popup
-    Persist.remove('gears');
+    // Persist.remove('gears');
     var store = new Persist.Store('Theme Store');
-    
+    store.remove('gears');
+	
     var DEFAULT_THEME = document.getElementById("base-style").getAttribute('href').substr(5);
     
     // Save the selected theme to a cookie
@@ -42,6 +43,7 @@ Select/Change the current theme
     function change_theme(file) {
         el = document.getElementById("base-style");
         el.setAttribute('href', '/css/' + file);
+		store.set('theme', file);
     }
     
     // Retrieve the theme from cookie
