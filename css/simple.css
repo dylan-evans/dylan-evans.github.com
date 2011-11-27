@@ -10,7 +10,7 @@ body {
 
 .page {
 
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     min-height: 800px;
     height: auto;
