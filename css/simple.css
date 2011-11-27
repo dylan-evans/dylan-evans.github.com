@@ -178,20 +178,11 @@ a.ni:visited {
     font-size: 8pt;
     width: 100px;
     min-height: 50px;
-    border: 1px solid #AAAAAA;
-    background-color: #EEEEEE;
     margin-left: 8px;
     margin-bottom:20px;
     padding: 0px;
     padding-top: 0px;
     padding-bottom: 5px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
-    box-shadow: 8px 10px 10px rgba(0,0,0,0.5);
-    behavior: url(/js/PIE.htc);
 }
 
 #menu ul {
