@@ -9,6 +9,7 @@ body {
 }
 
 .page {
+
     margin-left: auto;
     margin-right: auto;
     min-height: 800px;
@@ -16,12 +17,6 @@ body {
 /*    height: auto !important;
     height: 800px;*/
     width: 960px;
-<<<<<<< HEAD
-=======
-    background-image: url(/images/header-bg.png);
-    background-repeat: no-repeat;
-    
->>>>>>> f1de2ad1f0f2a5967effa6e278d578874bc1109e
     overflow: hidden; /* I don't know why this works! */
     behavior: url(/js/PIE.htc);
 }
