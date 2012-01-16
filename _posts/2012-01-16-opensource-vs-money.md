@@ -1,4 +1,8 @@
-# Open Source Vs. Money
+---
+title: Open Source Vs. Money
+publish: true
+layout: post
+---
 A conviction in open-source software becomes difficult to maintain when money
 is on the table. I have never had much trouble with this however at
 dinner a couple of days ago i was showing off my little android wallpaper app 
