@@ -28,22 +28,22 @@
     </div>
     <div class="prop"></div>
 
-    <div id="sidebar-left" class="span-3">
+    <div id="sidebar-left" class="span-4">
         {% include menu.html %}
     
         {% include theme_select.html %}
     </div>
-    <div id="page-content" class="soft-corners span-12">
+    <div id="page-content" class="soft-corners span-16">
       {% include ie6nomore.html %}
       {{ content }}
       
     </div>
     
-    <div id="sidebar-right" class="span-2">
+    <div id="sidebar-right" class="span-4">
         {% include twitter.html %}
     </div>
     
-  <div class="page-footer"> 
+  <div class="page-footer span-24"> 
     Last Build: {{ site.time }} by <a href="mailto:dylan@dje.me">Dylan Evans</a>
   </div>
   {% include google_analytics.html %}
