@@ -1,13 +1,22 @@
 ---
 layout: default
-title: All about Content Free
+title: About dje.me
 ---
 # {{page.title}}
-### (AKA dje.me and dylan-evans.github.com )
+(AKA dje.me and dylan-evans.github.com )
 
-## Contact
+## About me
+I am a programmer currently working in the pathology industry in C and perl
+mostly. Avid collector of languages, interested in all forms of logic, 
+complexity and chaos, and always looking for creative outlets to apply them to.
+Also prone to babbling garbage, stammering, using bad grammer and occasionally 
+just falling over for no good reason.
+
+### DJE
+These are my initials
+
+### Contact
 Email: [dylan@dje.me](mailto:dylan@dje.me)
-
 Tweet: [dje_me](http://twitter.com/dje_me)
 
 ## Credits
