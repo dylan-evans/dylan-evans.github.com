@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 	var draw = false;
 	
 	var config= {
-		CELL_SIZE: 10,
+		CELL_SIZE: 5,
 		FPS: 20,
 		width: 60,
 		height: 40
