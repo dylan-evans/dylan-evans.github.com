@@ -1,31 +1,25 @@
-<!DOCTYPE html>
+---
+layout: default
+title: Life
+---
+<title>Life</title>
+<link rel="stylesheet" href="life.css"/>
+<!-- <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script> -->
+<script type="text/javascript" src="jquery-1.7.2.js"></script>
+<script type="text/javascript" src="life.js"></script>
+<div style="font-style: oblique; color: red">Beta: This might work</div>
+<div id="main-pane"> 
 
-<html>
-	<head>
-		<title>Life</title>
-		<link rel="stylesheet" href="life.css"/>
-		<!-- <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script> -->
-		<script type="text/javascript" src="jquery-1.7.2.js"></script>
-		<script type="text/javascript" src="life.js"></script>
-	</head>
+	<h1>Life</h1>
+	<canvas width="600" height="400" id="world"></canvas>
 	
-	<body>
-	<div style="font-style: oblique; color: red">Alpha: This does not work</div>
-		<div id="main-pane"> 
-	
-			<h1>Life</h1>
-			<canvas width="600" height="400" id="world"></canvas>
-			
-			<div class="controlbar">
-				<form>
-					<input id="start-button" type="button" value="Start" />
-					<input id="step-button" type="button" value="Step" />
-					<input id="reset-button" type="button" value="Reset" />
-					<input id="clear-button" type="button" value="Clear" />
-					<input id="random-button" type="button" value="Random" />
-				</form>
-			</div>
-		</div>
-	</body>
-	
-</html>
+	<div class="controlbar">
+		<form>
+			<input id="start-button" type="button" value="Start" />
+			<input id="step-button" type="button" value="Step" />
+			<input id="reset-button" type="button" value="Reset" />
+			<input id="clear-button" type="button" value="Clear" />
+			<input id="random-button" type="button" value="Random" />
+		</form>
+	</div>
+</div>
