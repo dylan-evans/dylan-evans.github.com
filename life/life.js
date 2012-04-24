@@ -164,6 +164,37 @@ jQuery(document).ready(function($) {
 		}
 	}
 	
+	// The timeout id
+	var stepID = 0;
+	
+	// Step through
+	function step() {
+		//console.log('step');
+		if(!life.renderStep()) {
+			pause();
+		}
+		if(mode === 'running') {
+			stepID = window.setTimeout(step, 1000 / config.FPS);
+		}
+	}
+	
+	// Switch to run mode
+	function run() {
+		mode = 'running';
+		$('#start-button').attr('value', 'Pause');
+		$('#step-button').attr('disabled', 'disabled');
+		step();
+	}
+	
+	// Stop running
+	function pause() {
+		mode = 'draw';
+		window.clearTimeout(stepID);
+		$('#start-button').attr('value', 'Start');
+		$('#step-button').removeAttr('disabled');
+	}
+	
+	
 	// If world is defined run the script
 	var world = $('#world');
 	if(world !== undefined) {
@@ -172,36 +203,6 @@ jQuery(document).ready(function($) {
 		var life = new Life(world, grid, config);
 		
 		life.renderGrid();
-		
-		// The timeout id
-		var stepID = 0;
-		
-		// Step through
-		function step() {
-			//console.log('step');
-			if(!life.renderStep()) {
-				pause();
-			}
-			if(mode === 'running') {
-				stepID = window.setTimeout(step, 1000 / config.FPS);
-			}
-		}
-		
-		// Switch to run mode
-		function run() {
-			mode = 'running';
-			$('#start-button').attr('value', 'Pause');
-			$('#step-button').attr('disabled', 'disabled');
-			step();
-		}
-		
-		// Stop running
-		function pause() {
-			mode = 'draw';
-			window.clearTimeout(stepID);
-			$('#start-button').attr('value', 'Start');
-			$('#step-button').removeAttr('disabled');
-		}
 		
 		// Any click on the grid
 		world.click(function(e) {
