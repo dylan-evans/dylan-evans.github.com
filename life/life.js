@@ -202,7 +202,7 @@ jQuery(document).ready(function($) {
 	
 	// Stop running
 	function pause() {
-		mode = 'draw';
+		mode = 'drawing';
 		window.clearTimeout(stepID);
 		$('#start-button').attr('value', 'Start');
 		$('#step-button').removeAttr('disabled');
@@ -213,7 +213,7 @@ jQuery(document).ready(function($) {
 	var world = $('#world');
 	if(world !== undefined) {
 		var prevX = 0, prevY = 0;
-		var mode = 'draw';
+		var mode = 'drawing';
 		var grid = new Grid(world[0].height / config.CELL_SIZE, world[0].width / config.CELL_SIZE);
 		var life = new Life(world, grid, config);
 		
@@ -221,7 +221,7 @@ jQuery(document).ready(function($) {
 		
 		// Any click on the grid
 		world.click(function(e) {
-			if(mode === 'draw') {
+			if(mode === 'drawing') {
 				var offset = world.offset();
 				//Find the row and column
 				var row = (e.pageY - offset.top);
@@ -236,7 +236,7 @@ jQuery(document).ready(function($) {
 		
 		// 
 		world.mousedown(function(e) {
-			if(mode === 'draw') {
+			if(mode === 'drawing') {
 				mode = 'select';
 				var offset = world.offset();
 				prevX = (e.pageX - offset.left);
@@ -261,7 +261,7 @@ jQuery(document).ready(function($) {
 		
 		world.mouseup(function(e) {
 			if(mode === 'select') {
-				mode = 'draw';
+				mode = 'drawing';
 			}
 		});
 		
@@ -275,7 +275,7 @@ jQuery(document).ready(function($) {
 		
 		
 		$('#step-button').click(function(e) {
-			if(mode === 'draw') {
+			if(mode === 'drawing') {
 				life.renderStep();
 			}
 		});
@@ -287,7 +287,7 @@ jQuery(document).ready(function($) {
 		
 		// Clear button 
 		$('#clear-button').click(function() {
-			if(mode !== 'draw') {
+			if(mode !== 'drawing') {
 				pause();
 			}
 			grid.clear();
@@ -297,7 +297,7 @@ jQuery(document).ready(function($) {
 		// Random button sets 
 		$('#random-button').click(function() {
 			pause();
-			if(mode == 'draw') {
+			if(mode == 'drawing') {
 				grid.rand();
 				life.renderGrid();
 				run();
