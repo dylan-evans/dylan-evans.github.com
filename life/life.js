@@ -38,6 +38,7 @@ jQuery(document).ready(function($) {
 		this.clear = function() {
 			this.grid = new Array();
 			this.first = null;
+			this.frame = 0;
 		};
 		
 		// Get the state of a cell
