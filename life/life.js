@@ -18,6 +18,9 @@ jQuery(document).ready(function($) {
 		this.height = height;
 		this.width = width;
 		
+		// The frame number
+		this.frame = 0
+		
 		// This is the state of the grid when it is started
 		this.first = null;
 		
@@ -28,6 +31,7 @@ jQuery(document).ready(function($) {
 		this.reset = function() {
 			this.grid = this.first;
 			this.first = null;
+			this.frame = 0;
 		};
 		
 		// Clear the grid
@@ -99,6 +103,7 @@ jQuery(document).ready(function($) {
 				}
 			}
 			this.grid = next;
+			this.frame += 1;
 			return changes;
 		};
 		
@@ -176,6 +181,7 @@ jQuery(document).ready(function($) {
 		if(mode === 'running') {
 			stepID = window.setTimeout(step, 1000 / config.FPS);
 		}
+		$('#step-counter').text(grid.frame);
 	}
 	
 	// Switch to run mode
