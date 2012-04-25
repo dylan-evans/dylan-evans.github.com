@@ -143,6 +143,9 @@ jQuery(document).ready(function($) {
 			var ctx = world[0].getContext('2d');
 			var changes = grid.step(this.renderCell, ctx);
 			ctx.stroke();
+			if($('#step-counter')) {
+				$('#step-counter').text(grid.frame);
+			}
 			return changes;
 		}
 
@@ -167,6 +170,9 @@ jQuery(document).ready(function($) {
 				}
 			}
 			ctx.stroke();
+			if($('#step-counter')) {
+				$('#step-counter').text(grid.frame);
+			}
 		}
 	}
 	
@@ -189,7 +195,6 @@ jQuery(document).ready(function($) {
 	function run() {
 		mode = 'running';
 		$('#start-button').attr('value', 'Pause');
-		$('#step-button').attr('disabled', 'disabled');
 		step();
 	}
 	
