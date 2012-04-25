@@ -210,6 +210,7 @@ jQuery(document).ready(function($) {
 	// If world is defined run the script
 	var world = $('#world');
 	if(world !== undefined) {
+		var prevX = 0, prevY = 0;
 		var mode = 'draw';
 		var grid = new Grid(world[0].height / config.CELL_SIZE, world[0].width / config.CELL_SIZE);
 		var life = new Life(world, grid, config);
@@ -245,9 +246,9 @@ jQuery(document).ready(function($) {
 			if(mode === 'select') {
 				var offset = world.offset();
 				var row = (e.pageY - offset.top);
-				row = (row - (row % CELL_SIZE)) / CELL_SIZE;
+				row = (row - (row % config.CELL_SIZE)) / config.CELL_SIZE;
 				var col = (e.pageX - offset.left);
-				col = (col - (col % CELL_SIZE)) / CELL_SIZE;
+				col = (col - (col % config.CELL_SIZE)) / config.CELL_SIZE;
 				//console.log("Plotting row: " + row + " col: " + col);
 				grid.set(row, col, true);
 				life.renderGrid();
