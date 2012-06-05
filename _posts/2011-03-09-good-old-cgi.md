@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Good Old CGI
-published: true
+published: false
 ---
 # {{page.title}}
 CGI is the original and still the simplest way to deliver dynamic content to
