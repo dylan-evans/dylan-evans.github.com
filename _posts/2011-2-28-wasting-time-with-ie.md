@@ -5,12 +5,8 @@ published: true
 ---
 IE & Design
 ===========
-After studying IT at university i learnt very little about actual design,
-and assumed that the profession was for flamboyant lady-boys who didn't
-have a good grasp on algebra and art students who sold out to buy pot.
-However after working on a couple of sites since (including this one) 
-i am willing to concede that i may have been mistaken and have made
-some observations about design.
+
+Some points on the creation of this site:
 
 * Design is really hard
   > It's very easy to slap some text on a web page and call it a day, but
