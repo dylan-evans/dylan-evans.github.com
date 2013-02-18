@@ -35,3 +35,7 @@ or at your mother's house.
 
 Recommended to anyone that works in a shell.
 
+![Screenshot](/images/shellinabox2013-02-18.png)
+
+ 
+
