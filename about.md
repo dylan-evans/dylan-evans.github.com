@@ -33,7 +33,7 @@ many more, here are some of the sites i bookmarked.
 > Great little introduction.
 
 [The switch to Github Pages](http://sirupsen.com/the-switch-to-github-pages/)
-> Simon Hørup Eskildsen's minimalist blog: This explains Simon's reason for switching.
+> Simon Horup Eskildsen's minimalist blog: This explains Simon's reason for switching.
 
 [Publishing a Blog with GitHub Pages and Jekyll](http://blog.envylabs.com/2009/08/publishing-a-blog-with-github-pages-and-jekyll/)
 > Tyler Hunt from Envy Labs describes the basic process for setting up a GitHub blog.
@@ -47,3 +47,4 @@ many more, here are some of the sites i bookmarked.
 > An aweful program for previewing a site in IE6, IE7. Slightly easier than running VMs though
 [Multiple IEs](http://tredosoft.com/Multiple_IE)
 > Even better tool for testing IE compatibility
+
