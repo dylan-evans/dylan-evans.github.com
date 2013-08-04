@@ -1,5 +1,2 @@
-auto: true
-server: true
-server_port: 8000
 paginate: 2
 lsi: false
